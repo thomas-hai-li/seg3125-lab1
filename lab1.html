@@ -21,7 +21,7 @@
     </h1>
 
     <section class="featured">
-      <p class="featured__description">What do you think of the following UI?</p>
+      <p class="featured__description">consider the following UI...</p>
       <img class="featured__image" src="img/site.png" alt="www.thehelplist.ca landing page">
       <a class="featured__link" href="https://www.thehelplist.ca/" target="_blank">www.thehelplist.ca</a>
       <section class="nav">
@@ -31,27 +31,139 @@
     </section>
 
 
-    <section class="todo hidden">
-      <p>Time to collect your data >:)</p>
+    <section class="form-part1 hidden">
+      <p>3 questions - time to collect your data! >:)</p>
 
       <form>
         <ol>
-          <li>a text-type question</li>
-          <li>single choice question (radio)</li>
-          <li>single choice question (single selection list)</li>
-          <li>multi selection question (checkboxes)</li>
-          <li>a place to write comments</li>
-          <li>a likert type question (strongly agree / disagree)</li>
+          <!-- Question -->
+          <li>
+            Of the following, what do you think is the <strong>strongest</strong> aspect of the UI's design?
+            <ul>
+              <li>
+                <input type="radio" name="" id="">
+                <label>It's simplicity</label>
+              </li>
+              <li>
+                <input type="radio" name="" id="">
+                <label>The colour scheme</label>
+              </li>
+              <li>
+                <input type="radio" name="" id="">
+                <label>General layout</label>
+              </li>
+              <li>
+                <input type="radio" name="" id="">
+                <label>It conveys a clear message</label>
+              </li>
+            </ul>
+          </li>
+          <!-- Question -->
+          <li>
+            <p>Of the following, what <strong>other</strong> aspects do you like about the design?</p>
+            <div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>It's simplicity</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>The colour scheme</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>General layout</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>It conveys a clear message</label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>It's complexity</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>The emotion / vibe it conveys</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>Important menu items are highlighted</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="" id="">
+                  <label>I like turtles :D</label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Question -->
+          <li>
+            <p>
+              Based on the design, who do you think is the target audience of the site?
+            </p>
+            <select name="" id="">
+              <option value="children">Children</option>
+              <option value="teens">Teens</option>
+              <option value="young-adults">Young adults</option>
+              <option value="middle-age">Middle age adults</option>
+              <option value="seniors">Seniors</option>
+            </select>
+          </li>
         </ol>
       </form>
 
-
       <section class="nav">
-        <i id="to-page-1" class="material-icons">arrow_backward</i>
+        <i id="to-page-1" class="material-icons">arrow_back</i>
         <i id="to-page-3" class="material-icons">arrow_forward</i>
       </section>
       <p class="hint">(you can use the right & left arrows to navigate)</p>
 
+    </section>
+
+    <section class="form-part2 hidden">
+      <p>last 3 questions...</p>
+
+      <form>
+        <ol start="4">
+          <!-- Question -->
+          <li>
+            <p>
+              Based on your intuition, are you attracted / repulsed by this site (or neither)? Why or why not?
+            </p>
+            <textarea class="comments" cols="50" rows="3"></textarea>
+          </li>
+          <!-- Question -->
+          <li>
+            <p>Any comments?</p>
+            <textarea class="comments" cols="50" rows="3"></textarea>
+          </li>
+          <!-- Question -->
+          <li>
+            <p>If you were to continue browsing this website, a large contributing factor is because of good UI
+              design.</p>
+            <div class="form-slider-area">
+              <span class="form-slider-extreme">Strongly Disagree</span>
+              <input class="form-slider" type="range" name="" id="" min="1" max="5" step="1">
+              <span class="form-slider-extreme">Strongly Agree</span>
+            </div>
+          </li>
+        </ol>
+      </form>
+
+      <h3 class="submit-button">submit</h3>
+
+      <section class="nav">
+        <i id="back-page-2" class="material-icons">arrow_back</i>
+      </section>
+      <p class="hint">(you can use the right & left arrows to navigate)</p>
+    </section>
+
+    <section class="submitted hidden">
+      <p class="featured__description">Submitted - thanks for your input :)</p>
     </section>
 
   </div>

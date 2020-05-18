@@ -58,7 +58,9 @@ section {
 .nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   margin: 1em;
+  width: 10em;
 }
 
 .material-icons {
@@ -82,14 +84,58 @@ section {
   /* margin: 0 1em 0 0; */
 }
 
+/* form elements */
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+ol>li {
+  margin: 1em 0;
+}
+
+ol>li:nth-child(2)>div {
+  display: flex;
+}
+
+.comments {
+  resize: none;
+}
+
+.form-slider-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* need to translateX cuz of the left padding of the ol */
+  transform: translateX(-18px);
+}
+
+.form-slider {
+  width: 20em;
+}
+
+.form-slider-extreme {
+  width: 3em;
+}
+
+.submit-button {
+  cursor: pointer;
+  background-color: rgba(32, 252, 143, 0.1);
+  background-image: url('/img/glitter.gif');
+  background-position: center;
+}
+
 /* .container initial fadein */
 
 .container {
-  -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 1.2s; /* Firefox < 16 */
-      -ms-animation: fadein 1.2s; /* Internet Explorer */
-       -o-animation: fadein 1.2s; /* Opera < 12.1 */
-          animation: fadein 1.2s;
+  -webkit-animation: fadein 2.8s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2.8s; /* Firefox < 16 */
+      -ms-animation: fadein 2.8s; /* Internet Explorer */
+       -o-animation: fadein 2.8s; /* Opera < 12.1 */
+          animation: fadein 2.8s;
 }
 
 @keyframes fadein {
