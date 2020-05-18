@@ -36,10 +36,6 @@ section {
   /* box-shadow: 5px 10px rgba(32, 252, 143, 0.3); */
 }
 
-.featured__description {
-  margin: 0;
-}
-
 .featured__link {
   font-style: italic;
   text-decoration: none;
